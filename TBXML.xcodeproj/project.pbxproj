@@ -29,7 +29,7 @@
 		829FA0B614D5B52A00D18697 /* libTBXML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 829FA09C14D5B52A00D18697 /* libTBXML.a */; };
 		829FA0D014D5B55D00D18697 /* TBXML+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = 829FA0C914D5B55D00D18697 /* TBXML+Compression.m */; };
 		829FA0D114D5B55D00D18697 /* TBXML+HTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 829FA0CA14D5B55D00D18697 /* TBXML+HTTP.m */; };
-		829FA0D214D5B55D00D18697 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 829FA0CB14D5B55D00D18697 /* TBXML.m */; };
+		829FA0D214D5B55D00D18697 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 829FA0CB14D5B55D00D18697 /* TBXML.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -309,7 +309,7 @@
 		829FA09314D5B52A00D18697 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = "71 Squared";
 			};
 			buildConfigurationList = 829FA09614D5B52A00D18697 /* Build configuration list for PBXProject "TBXML" */;
@@ -508,7 +508,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -535,7 +535,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -553,6 +553,7 @@
 		829FA0C314D5B52A00D18697 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TBXML-Support/TBXML-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -562,6 +563,7 @@
 		829FA0C414D5B52A00D18697 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TBXML-Support/TBXML-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -571,6 +573,7 @@
 		829FA0C614D5B52A00D18697 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TBXML-Support/TBXML-Prefix.pch";
@@ -583,6 +586,7 @@
 		829FA0C714D5B52A00D18697 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TBXML-Support/TBXML-Prefix.pch";
